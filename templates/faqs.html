@@ -1,0 +1,33 @@
+{% extends 'layout.html' %}
+{% load crispy_forms_tags %}
+{% block container  %}
+{% load static %}
+<!-- <div class="FORM" style="display: flex; width: 100%; height: 100vh; justify-content: center; align-items: center; ">
+<form method="post" action="{% url 'user:faqs' %}" style="background-color:  #35353899; padding: 20px;">
+    {% csrf_token %}
+    {{ form|crispy }}
+   
+    <div style="width: 100%; text-align: center;">
+    <button type = "submit" value = "Submit" class = "btn btn-warning">Ekle</button>
+</div>
+</form>
+</div> -->
+<div class="FORM" style="display: grid; width: 100%; grid-template-columns: 1fr 1fr;  height: 100vh; align-items: center; background-color: black;">
+    <div class="lform" style="padding: 50px;">
+        <h2 style="font-weight: bolder; color: aliceblue;">İLETİŞİM</h2>
+<form method="post" action="{% url 'user:faqs' %}" style="color: aliceblue;" >
+    {% csrf_token %}
+    {{ form|crispy }}
+    <!-- {{ form.as_p }} -->
+    <div style="width: 100%; text-align: center;">
+    <button type = "submit" value = "Submit" class = "btn btn-warning">Ekle</button>
+</div>
+</form>
+</div>
+<div class="aform" style="text-align: center; padding: 50px;">
+   <img src="{% static 'img/iletişim.jpg' %}" alt="sss" height="438.4" width="100%">
+</div>
+
+
+</div>
+{% endblock  %}

@@ -1,0 +1,51 @@
+
+{% extends 'layout.html' %}
+
+{% block container %}
+{% load static %}
+<!-- <img src="{% static 'img/back.jpg' %}" alt="My image" class="aboutimg"> -->
+
+<div class="about" style="background-image: url(../static/img/ağırlık.jpg);">
+<div class="textabout" ><h1 style="font-size:100px;">HAPPİER,HEALTHİER AND STRONGER!</h1>
+<p style="margin-top: 20px; color: aliceblue;">
+    En yeni teknolojik ekipmanlar ile dış mekanı aratmayacak özelliklere sahip ısıtma, soğutma ve havalandırma sistemleri ile FITPLUS,<br>
+    daha kaliteli egzersiz için en uygun spor salonu olma özelliği taşıyor.</p></div>
+</div>
+<div style="width: 100%; background-color: black;">
+<div class="container col-xxl-8 px-4 py-5">
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+      <div class="col-10 col-sm-8 col-lg-6">
+        <img src="{% static 'img/isolation_exercise.webp' %}" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+      </div>
+      <div class="col-lg-6">
+        <h1  style="color: aliceblue; font-weight: 700;">Ne Arıyorsan Var.</h1>
+        <p class="lead" style="color: aliceblue;">Burada Crossfit, Dövüş Sanatları, Fitness, Pilates gibi birçok yararlanabileceğiniz spor dalları bulunuyor.</p>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+          <a href="features/#someinfo" class="btn btn-dark">Git</a>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  
+  
+    <div style="background-color: black; text-align: center;">
+    
+      <h1 style="font-weight: 700; padding: 5px; color: aliceblue;">Daha Fazlası</h1>
+      
+
+      <p style="color: aliceblue; font-size: 1.25rem; font-weight: 300;">Jakuzi,Sauna,Masaj,Kapalı Havuz gibi daha fazlası sizleri bekliyor.</p>
+    
+      <div style="padding-bottom: 20px;">
+      <a href="features/#someinfos" class="btn btn-dark">Git</a>
+    </div>
+  
+    <img src="{% static 'img/Untitled-design-82.png' %}"  class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image"  loading="lazy">
+      
+
+    
+  </div>
+ 
+
+{% endblock container %}
